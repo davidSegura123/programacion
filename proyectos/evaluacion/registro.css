@@ -1,0 +1,81 @@
+*, input, a {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    color: black;
+    font-size: 16px;
+    list-style: none;
+    border-spacing: 0px;
+    text-decoration: none;
+    font-family: 'Verdana';
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(30, 30, 50);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.contenedor {
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 20px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0px 0px 10px 0px black;
+}
+.subm, .passw, .user {
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+}
+.titulo {
+    cursor: default;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.subm {
+    margin-bottom: 10px;
+    width: 250px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid rgb(60, 150, 60);
+    background-color: rgb(60, 150, 60);
+    transition: 0.3s;
+}
+.subm:hover {
+    transition: 0.3s;
+    border: 1px solid rgb(60, 150, 60);
+    background-color: rgb(40, 150, 40);
+}
+.user:focus::placeholder,
+.passw:focus::placeholder {
+    visibility: hidden;
+}
+.fileCreate {
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 7px;
+}
+.fileError {
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 7px;
+}
+.ver {
+    transition: 0.3s;
+}
+.ver:hover {
+    transition: 0.3s;
+    color: blue;
+}

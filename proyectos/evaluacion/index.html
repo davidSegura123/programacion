@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="registro.css">
+        <title>
+            Registrarse
+        </title>
+    </head>
+    <body>
+        <form action="registro.php" method="post">
+            <div class="contenedor">
+                <p class="titulo">Sing Up</p>
+                <input type="text" name="user" id="user" placeholder="usuario" maxlength="30" spellcheck="false" autocomplete="off" class="user" required>
+                <input type="password" name="passw" id="passw" placeholder="contraseña" maxlength="15" spellcheck="false" autocomplete="off" class="passw" required>
+                <input type="submit" value="Sing Up" class="subm">
+                <center><a href="verRegistro.php" class="ver">Ver</a></center>
+            </div>
+        </form>
+    </body>
+</html>
