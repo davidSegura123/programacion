@@ -13,11 +13,11 @@ let y = 6;
 
 // operadores aritmeticos
 
-x + y;
-x - y;
-x * y;
-x / y;
-x % y;
-x ** y;
-x++;
-x--;
+// x + y;
+// x - y;
+// x * y;
+// x / y;
+// x % y;
+// x**y;
+// x++;
+// x--;
