@@ -3,6 +3,7 @@
     $usuario = $_POST['user'];
     $contraseña = $_POST['passw'];
     $fileName = "registro.txt";
+    
     if (!file_exists($fileName)) {
         $file = fopen($fileName, "a");
         fwrite($file, "Usuario: ".$usuario.PHP_EOL);
