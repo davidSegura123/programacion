@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
         <title>
             Creador
         </title>
@@ -18,17 +19,17 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="text" name="nomForm" placeholder="Nombre del Formulario" required>
+                        <input type="text" name="nomForm" placeholder="Nombre del Formulario" spellcheck="false" required>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="text" name="nomCamp" placeholder="Nombre del Campo" required>
+                        <input type="text" name="nomCamp" placeholder="Nombre del Campo" spellcheck="false" required>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="text" name="nomAction" placeholder="Nombre del Accionador" required>
+                        <input type="text" name="nomAction" placeholder="Nombre del Accionador" spellcheck="false" required>
                     </td>
                 </tr>
                 <tr>

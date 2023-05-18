@@ -4,10 +4,10 @@
     $nomAction = $_POST['nomAction'];
     include 'creador.php';
     if (file_exists("$nomForm.html")) {
-        echo "'$nomForm.html' ya existe, elija otro nombre.";
+        echo "<p class='error'>'$nomForm.html' ya existe, elija otro nombre.</p>";
     } else {
         if (file_exists("$nomAction.php")) {
-            echo "'$nomAction.php' ya existe, elija otro nombre.";
+            echo "<p class='error'>'$nomAction.php' ya existe, elija otro nombre.</p>";
         } else {
             $html = fopen("$nomForm.html", "w");
             fwrite($html, "
@@ -16,6 +16,7 @@
                     <head>
                         <meta charset='UTF-8'>
                         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+                        <link rel='stylesheet' href='styles.css'>
                         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
                         <title>
                             $nomForm
@@ -37,6 +38,10 @@
                                 <tr>
                                     <td>
                                         <input type='submit' value='Cargar'>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
                                         <a href='creador.php'>Volver</a>
                                     </td>
                                 </tr>
@@ -47,15 +52,17 @@
             ");
             fclose($html);
             $php = fopen("$nomAction.php", "w");
+            // aqui el error todavia no logro solucionarlo, debo de correjir las comillas
             fwrite($php, '
                 <?php
-                    include "'.$nomForm.'.html";
-                    $campo = $_POST["'.$nomCamp.'"];
-                    echo "'.$nomCamp.': $campo";
+                    echo `<head><link rel="stylesheet" href="styles.css"></head>`;
+                    include `'.$nomForm.'.html`;
+                    $campo = $POST[`'.$nomCamp.'`];
+                    echo `<p class="exito">'.$nomCamp.': $campo</p>`;
                 ?>
             ');
             fclose($php);
-            echo "$nomForm se ha creado exitosamente.<br><a href='$nomForm.html'>$nomForm.html</a>";
+            echo "<p class='exito'>".$nomForm." se ha creado exitosamente.<br><a href='".$nomForm.".html'>".$nomForm.".html</a></p>";
         }
     }
 ?>

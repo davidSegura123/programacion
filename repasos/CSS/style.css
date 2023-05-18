@@ -1,0 +1,32 @@
+*, input, a {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    color: black;
+    font-size: 16px;
+    list-style: none;
+    border-spacing: 0px;
+    text-decoration: none;
+    font-family: 'Verdana';
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.objeto {
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+.objeto:hover {
+    transition: 0.3s;
+    height: 500px;
+    width: 500px;
+    background-color: red;
+}
