@@ -34,4 +34,4 @@
 // let resultado = nombres.filter(nombre => nombre.length > 5); // permite filtrar los elementos de un array por medio de una funcion con una condicion y los que pasaron la condicion son almacenados en un nuevo array
 // console.log(resultado);
 
-// DEBO DE  BUSCAR UN VIDEO DE EXPLICACION COMPLETA DEL "forich()"
+// DEBO DE BUSCAR UN VIDEO DE EXPLICACION COMPLETA DEL "forich()"

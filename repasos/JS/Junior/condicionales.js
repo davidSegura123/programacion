@@ -3,13 +3,13 @@
 
 // if
 
-if (num1 > num2) {
-    alert("si, numero 1 es mayor a numero 2.");
-} else if (num1 == num2) {
-    alert("no, pero numero 1 es igual a numero 2.");
-} else {
-    alert("tampoco, no se han cumplido ninguna de las condiciones.");
-}
+// if (num1 > num2) {
+//     alert("si, numero 1 es mayor a numero 2.");
+// } else if (num1 == num2) {
+//     alert("no, pero numero 1 es igual a numero 2.");
+// } else {
+//     alert("tampoco, no se han cumplido ninguna de las condiciones.");
+// }
 
 // switch
 
