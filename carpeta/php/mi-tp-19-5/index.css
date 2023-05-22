@@ -1,0 +1,45 @@
+*, input, a {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    color: black;
+    font-size: 16px;
+    list-style: none;
+    border-spacing: 0px;
+    text-decoration: none;
+    font-family: 'Verdana';
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input, textarea, select {
+    padding: 8px;
+}
+select option {
+    padding: 8px;
+}
+.container {
+    text-align: center;
+    border: 1px solid grey;
+    padding: 20px;
+}
+h1 {
+    font-size: 32px;
+}
+.content {
+    margin-top: 20px;
+}
+.nav {
+    margin-bottom: 20px;
+}
+select {
+    width: 230px;
+}
+textarea {
+    width: 100%;
+}
