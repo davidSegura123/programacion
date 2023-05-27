@@ -1,0 +1,119 @@
+*, input, a, p {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    color: black;
+    font-size: 16px;
+    list-style: none;
+    border-spacing: 0px;
+    text-decoration: none;
+    overflow: hidden;
+    font-family: Verdana;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(235, 235, 235);
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.super-container-1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    width: 95%;
+    position: absolute;
+}
+.input-login, .submit-login {
+    margin-top: 35px;
+}
+.input-login, .submit-login {
+    padding: 10px;
+    border: 1px solid grey;
+}
+.input-login:focus::placeholder {
+    color: transparent;
+    transition: 0.3s;
+}
+.input-login {
+    transition: 0.3s;
+}
+.submit-login {
+    background-color: rgb(9, 71, 163);
+    border-color: rgb(9, 71, 163);
+    color: white;
+    width: 100%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.input-login:focus , .submit-login:focus{
+    border-color: rgb(9, 71, 163);
+    transition: 0.3s;
+}
+.submit-login:hover {
+    transition: 0.3s;
+    background-color: rgb(8, 49, 110);
+}
+.title-login {
+    font-size: 30px;
+}
+form {
+    height: max-content;
+    width: max-content;
+    text-align: center;
+}
+.container-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 25px;
+    border: 1px solid grey;
+    margin-bottom: 5px;
+    cursor: default;
+}
+.container-img-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.img-login {
+    height: 100px;
+}
+.logo1 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 5px;
+}
+.content-login {
+    font-weight: bold;
+}
+.header-login {
+    background-color: white;
+    padding: 25px;
+    border: 1px solid grey;
+    cursor: default;
+}
+.singup-link-login {
+    color: rgb(9, 71, 163);
+    transition: 0.3s;
+}
+.singup-link-login:hover {
+    color: rgb(8, 49, 110);
+    transition: 0.3s;
+}
+.error-message {
+    position: absolute;
+    top: 80%;
+    background-color: red;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 2px;
+}
