@@ -15,9 +15,6 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
-body::-webkit-scrollbar-horizontal {
-    background-color: blueviolet;
-}
 .dreg {
     position: absolute;
     top: 0px;
@@ -43,7 +40,8 @@ body::-webkit-scrollbar-horizontal {
     transition: 0.3s;
 }
 .fondoNegro {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
     transition: 0.3s;
 
 }

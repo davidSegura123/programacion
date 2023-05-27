@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Sistema Solar
+        </title>
+        <style>
+            body {
+                margin: 0px;
+                padding: 0px;
+                background-image: url(espacio-exterior.jpg);
+                background-size: cover;
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .space {
+                height: 500px;
+                width: 500px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                animation: orbitar 10s linear infinite;
+            }
+            .sol {
+                position: absolute;
+                height: 300px;
+                width: 300px;
+                border-radius: 50%;
+                background-image: url(sol.png);
+                background-size: cover;
+            }
+            .planet {
+                position: absolute;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                background-image: url(planeta-tierra.png);
+                background-size: cover;
+                animation: posicion 3s linear infinite;
+                box-shadow: 0px 0px 10px 0px rgb(81, 211, 255);
+            }
+            @keyframes posicion {
+                0% {
+                    transform: translate(-345px) rotate(0deg);
+                }
+                100% {
+                    transform: translate(-345px) rotate(360deg);
+                }
+            }
+            @keyframes orbitar {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="space">
+            <div class="sol"></div>
+            <div class="planet"></div>
+        </div>
+    </body>
+</html>
