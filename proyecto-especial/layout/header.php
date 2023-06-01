@@ -15,10 +15,10 @@
             <a href="docs.php" class="home-link">documentacion</a>
         </div>
         <div class="home-option gf3">
-            <a href="sobreNosotros.php" class="home-link">sobre nosotros</a>
+            <a href="aboutUs.php" class="home-link">sobre nosotros</a>
         </div>
         <div class="home-option gf4">
-            <a href="" class="home-link">cuenta</a>
+            <a href="account.php" class="home-link">cuenta</a>
         </div>
     </nav>
 </header>
