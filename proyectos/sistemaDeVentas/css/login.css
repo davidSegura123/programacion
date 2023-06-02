@@ -19,6 +19,7 @@ body {
     align-items: center;
     flex-direction: column;
 }
+/* LOGIN */
 .super-container-1 {
     display: flex;
     justify-content: space-evenly;
@@ -27,8 +28,8 @@ body {
     width: 95%;
     position: absolute;
 }
-.input-login, .submit-login {
-    margin-top: 35px;
+.input-login, .submit-login, .error-message, .success-message {
+    margin-top: 20px;
 }
 .input-login, .submit-login {
     padding: 10px;
@@ -109,9 +110,14 @@ form {
     transition: 0.3s;
 }
 .error-message {
-    position: absolute;
-    top: 80%;
     background-color: red;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 2px;
+}
+.success-message {
+    background-color: green;
     padding: 10px;
     color: white;
     font-weight: bold;
