@@ -66,10 +66,12 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    cursor: default;
 }
 .content-homeUser {
     padding: 81px 10px 10px 260px;
     width: 100%;
+    cursor: default;
 }
 .title-user-homeUser {
     background-color: rgb(30, 30, 30);
@@ -91,4 +93,24 @@ body::-webkit-scrollbar-thumb {
     color: rgb(0, 255, 0);
     font-size: 12px;
     margin-top: 3px;
+}
+.nav-homeUser {
+    margin-top: 30px;
+}
+.link-3-homeUser {
+    padding: 20px;
+    width: 250px;
+    display: inline-block;
+    color: white;
+}
+.li-homeUser {
+    background-color: transparent;
+    transition: 0.3s;
+}
+.li-homeUser:hover {
+    background-color: rgb(30, 30, 30);
+    transition: 0.3s;
+}
+.b {
+    border-top: 1px solid rgb(30, 30, 30);
 }

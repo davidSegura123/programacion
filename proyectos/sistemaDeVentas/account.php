@@ -1,7 +1,7 @@
 <?php
     include('connection.php');
     session_start();
-    if(empty($_SESSION["id"])) { // al intentar moverse a homeUser sin iniciar sesion, te redigira a index.php ya que la variable de sesion del id del usuario esta vacia, justamente porque no se inicio sesion
+    if(empty($_SESSION["id"])) {
         header("location:index.php");
     }
 ?>
@@ -13,14 +13,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/homeUser.css">
         <title>
-            Inicio Usuario
+            Cuenta
         </title>
     </head>
     <body>
         <?php include('layout/header.php'); ?>
         <?php include('layout/aside.php'); ?>
         <main class="content-homeUser">
-            hola
+            cuenta
         </main>
     </body>
 </html>
