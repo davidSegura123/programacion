@@ -21,8 +21,8 @@
                                 $newUser = $_POST["newUser"];
                                 $newName = $_POST["newName"];
                                 $newPassword = $_POST["newPassword"];
-                                $query = $connection -> query("INSERT INTO usuarios (alias_usuario, contraseña_usuario, nombre_usuario)
-                                VALUES ('$newUser','$newPassword','$newName')");
+                                $query = $connection -> query("INSERT INTO usuarios (alias_usuario, contraseña_usuario, nombre_usuario, dni_usuario, gmail_usuario, permiso_usuario)
+                                VALUES ('$newUser','$newPassword','$newName','0','-','-')");
                                 echo "<p class='success-message'>Te has registrado.</p>";
                             } else {
                                 echo "<p class='error-message'>ingrese datos.</p>";

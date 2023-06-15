@@ -6,6 +6,6 @@
         </a>
     </div>
     <div class="header-group-homeUser">
-        <a href="singOff.php" class="link-2-homeUser">Cerrar sesión</a>
+        2023 © Segura David
     </div>
 </header>

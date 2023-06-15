@@ -46,10 +46,6 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-between;
     align-items: center;
 }
-.link-2-homeUser {
-    font-size: 18px;
-    margin-right: 10px;
-}
 .title-homeUser {
     font-size: 20px;
     font-weight: bold;
@@ -70,8 +66,12 @@ body::-webkit-scrollbar-thumb {
 }
 .content-homeUser {
     padding: 81px 10px 10px 260px;
+    min-height: 100vh;
     width: 100%;
     cursor: default;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 .title-user-homeUser {
     background-color: rgb(30, 30, 30);
@@ -111,6 +111,65 @@ body::-webkit-scrollbar-thumb {
     background-color: rgb(30, 30, 30);
     transition: 0.3s;
 }
-.b {
-    border-top: 1px solid rgb(30, 30, 30);
+.table-account {
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid grey;
+}
+.lk {
+    padding: 7px;
+}
+td, th {
+    padding: 12px;
+    text-align: center;
+}
+.n {
+    border-bottom: 1px solid grey;
+}
+.g {
+    transition: 0.3s;
+}
+.g:hover {
+    background-color: rgb(235, 235, 235);
+    transition: 0.3s;
+}
+.j {
+    border-bottom-left-radius: 15px;
+}
+.jk {
+    border-bottom-right-radius: 15px;
+}
+.update-account {
+    border: none;
+    text-align: center;
+    width: 300px;
+}
+form {
+    width: 100%;
+}
+.submit-update {
+    padding: 10px;
+    border: none;
+    background-color: rgb(9, 71, 163);
+    color: white;
+    transition: 0.3s;
+}
+.submit-update:hover {
+    transition: 0.3s;
+    background-color: rgb(8, 49, 110);
+}
+.error-message {
+    background-color: red;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 2px;
+}
+.success-message {
+    background-color: green;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 2px;
 }

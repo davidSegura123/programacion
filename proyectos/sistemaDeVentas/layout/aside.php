@@ -12,22 +12,22 @@
                         Inicio
                     </a>
                 </li>
-                <li class="li-homeUser b">
-                    <a href="" class="link-3-homeUser">
+                <li class="li-homeUser">
+                    <a href="users.php" class="link-3-homeUser">
                         Usuarios
                     </a>
                 </li>
-                <li class="li-homeUser b">
+                <li class="li-homeUser">
                     <a href="" class="link-3-homeUser">
                         Proveedores
                     </a>
                 </li>
-                <li class="li-homeUser b">
+                <li class="li-homeUser">
                     <a href="" class="link-3-homeUser">
                         Productos
                     </a>
                 </li>
-                <li class="li-homeUser b">
+                <li class="li-homeUser">
                     <a href="" class="link-3-homeUser">
                         Ventas
                     </a>
