@@ -1,4 +1,3 @@
 <?php
     $nombre = "david";
-    echo $nombre
-?>
+    echo $nombre;
